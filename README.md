@@ -1,4 +1,5 @@
-# Macshaughnessy3's Personal Website 
+# Macshaughnessy3's Personal Website
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -6,6 +7,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm deploy`
+
+Deploys the repository using gh-pages to [http://macshaughnessy3.github.io/macshaughnessy3](http://macshaughnessy3.github.io/macshaughnessy3).
 
 ### `npm start`
 
