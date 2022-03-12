@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm deploy`
+### `npm run deploy`
 
 Deploys the repository using gh-pages to [http://macshaughnessy3.github.io/macshaughnessy3](http://macshaughnessy3.github.io/macshaughnessy3).
 
