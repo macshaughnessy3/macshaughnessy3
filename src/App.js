@@ -1,8 +1,9 @@
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
 import Home from "./Home";
 import About from "./About";
 import Projects from "./Projects";
 import Project from "./components/Project";
+import useLocalStorage from 'use-local-storage'
 
 import {
   BrowserRouter as Router,
@@ -22,29 +23,31 @@ import {
 // } from "./config.js";
 
 export default function App() {
-  const [mode, setMode] = useState('light')
+  const isDefaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const [mode, setMode] = useLocalStorage('theme', isDefaultDark ? 'dark' : 'light');
 
-  useEffect(() => {
-    // Add listener to update styles
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => onSelectMode(e.matches ? 'dark' : 'light'));
-
-    // Setup dark/light mode for the first time
-    onSelectMode(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
-
-    // Remove listener
-    return () => {
-      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', () => {
-      });
-    }
-  }, []);
-
-  const onSelectMode = (mode) => {
+  const onSelectMode = ((mode) => {
     setMode(mode)
     if (mode === 'dark')
       document.body.classList.add('dark-mode')
     else
       document.body.classList.remove('dark-mode')
-  }
+  }, [mode]);
+
+  useEffect(() => {
+    // Add event listener to determine preferred color
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', e => onSelectMode(e.matches ? 'dark' : 'light'));
+
+    // Setup dark/light mode on refresh
+    onSelectMode(mode)
+
+    // Remove event listener
+    return () => {
+      window.matchMedia('(prefers-color-scheme: dark)')
+        .removeEventListener('change', () => {});
+    }
+  }, [mode, onSelectMode]);
 
   return (
     <div className="App">
@@ -61,51 +64,3 @@ export default function App() {
     </div>
   );
 }
-
-// function Home() {
-//   return (
-//     <><h2>Home</h2>
-//       <div>
-//         <ul>
-//           <li>
-//             <Link to="/">Home</Link>
-//           </li>
-//           <li>
-//             <Link to="/about">About</Link>
-//           </li>
-//           <li>
-//             <Link to="/topics">Topics</Link>
-//           </li>
-//         </ul>
-//       </div>
-//     </>
-//   );
-// }
-
-// const About = () => {
-//   return <h2>About</h2>;
-// }
-
-// const Topics = () => {
-//   return (
-//     <div>
-//       <h2>Topics</h2>
-
-//       <ul>
-//         <li>
-//           <Link to={`topics/components`}>Components</Link>
-//         </li>
-//         <li>
-//           <Link to={`topics/props-v-state`}>
-//             Props v. State
-//           </Link>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }
-
-// const Topic = () => {
-//   const { id } = useParams();
-//   return <h3>Requested topic ID: {id}</h3>;
-// }
