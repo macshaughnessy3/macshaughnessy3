@@ -2,7 +2,9 @@
   --background-color: #f0dbb0;
   --text-primary: #26272d;
   --text-secondary: #f06446;
-  --accent: #000550;
+  --accent: #774f95;
+  --accent-secondary: #000550;
+
 }
 
 .dark-mode {
@@ -24,8 +26,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+h2 {
+  color: var(--accent);
 }
 
 .navbar {
@@ -33,7 +38,7 @@ code {
   justify-content: flex-end;
 }
 
-
 .button {
   padding: 10px;
+  cursor: pointer;
 }

@@ -1,0 +1,58 @@
+.App {
+  position: absolute;
+  display: flex;
+  top: 60px; // matches logo height of 36.5
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    .column {
+      margin: 0 2rem 0 2rem;
+      flex-direction: column;
+    }  
+  }
+}
+
+.personal-info {
+  .center {
+    margin: auto;
+    width: 100%;
+  }
+
+  .image {
+    border-radius: 50px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+a {
+  color: unset;
+  font-style: unset;
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+@media only screen and (min-width: 1023px) {
+  .App{
+    .home {
+      flex-direction: row;
+
+      .scrollable {
+        overflow: auto;
+        min-height: -webkit-min-content;
+      }
+
+      .column {
+        flex-basis: 100%;
+      }  
+    }
+  }
+}

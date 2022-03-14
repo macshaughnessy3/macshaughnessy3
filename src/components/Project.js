@@ -1,13 +1,13 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
-// const Project = (props) => {
-//   return props.name;
-// };
+const Project = (props) => {
+  return props.name;
+};
 
-// export default Project;
+export default Project;
 
-// Project.defaultProps = {name: 'macshaughnessy3'}
-// Project.propTypes = { name: PropTypes.string.isRequired}
+Project.defaultProps = {name: 'macshaughnessy3'}
+Project.propTypes = { name: PropTypes.string.isRequired}
 
 // import React, { Component } from "react";
 // import "../App.scss";
