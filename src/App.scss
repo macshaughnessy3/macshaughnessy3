@@ -25,13 +25,17 @@
 
 .ibox {
   display: grid;
-  grid-template-columns: 10rem 10rem;
+  grid-template-columns: 8rem 8rem;
   grid-gap: 1rem;
+}
+
+ol {
+  padding-inline-start: 20px;
 }
 
 .ibox2 {
   display: grid;
-  grid-template-columns: 12rem 12rem;
+  // grid-template-columns: 10rem 10rem;
   grid-gap: 0.1rem;
 
   .center {
