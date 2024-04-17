@@ -19,6 +19,17 @@
   }
 }
 
+.ibox {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem;
+  grid-gap: 1rem;
+}
+.ibox2 {
+  display: grid;
+  grid-template-columns: 12rem 12rem 12rem;
+  grid-gap: 1rem;
+}
+
 .personal-info {
   .center {
     margin: auto;
@@ -33,11 +44,15 @@
   }
 }
 
-a {
+h2 > a {
   color: unset;
   font-style: unset;
   cursor: pointer;
   text-decoration: unset;
+}
+
+a {
+  color: var(--text-secondary);
 }
 
 @media only screen and (min-width: 1023px) {

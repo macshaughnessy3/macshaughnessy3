@@ -1,7 +1,36 @@
 import PropTypes from 'prop-types';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+
+import "./styles/project.scss";
 
 const Project = (props) => {
-  return props.name;
+	const { logo, title, description, linkText, link, size } = props;
+
+	return (
+		<React.Fragment>
+			<div className="project">
+				<Link to={link}>
+					<div className={size}>
+						<h3>{title}</h3>
+						<div className="project-logo">
+							<img src={logo} alt="logo" className="image"/>
+						</div>
+						{/* <p>{description}</p> */}
+						<div className="project-link">
+							<div className="project-link-icon">
+								<FontAwesomeIcon icon={faLink} />
+							</div>
+
+							<div className="project-link-text">{linkText}</div>
+						</div>
+					</div>
+				</Link>
+			</div>
+		</React.Fragment>
+	);
 };
 
 export default Project;
@@ -12,8 +41,8 @@ Project.propTypes = { name: PropTypes.string.isRequired}
 // import React, { Component } from "react";
 // import "../App.scss";
 // // import "bootstrap/dist/css/bootstrap.min.css";
-// import axios from "axios";
-// // import "bootstrap/dist/js/bootstrap.bundle.min";
+// import axios from 'axios';
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // class Project extends Component {
 //   constructor(props) {
@@ -68,6 +97,7 @@ Project.propTypes = { name: PropTypes.string.isRequired}
 //   render() {
 //     return (
 //       <div className="col-md-6">
+//         WORDS
 //         <div className="card shadow-lg p-3 mb-5 bg-white rounded">
 //           {/* <img src="" className="card-img-top" alt="..." /> */}
 //           <div className="card-body">

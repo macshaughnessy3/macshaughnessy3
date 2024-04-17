@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import {Link} from "react-router-dom"
+import AllProjects from '../components/AllProjects';
+
 const Projects = (props) => {
   props = {...props}
   return (
@@ -7,6 +9,7 @@ const Projects = (props) => {
       <h2 className='header'>
         <Link to="/projects/1" >Projects</Link>
       </h2>
+      <AllProjects/>
     </>
   );
 };
