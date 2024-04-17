@@ -5,7 +5,7 @@ const Aboutme = (props) => {
   return (
     <>
     <p>
-      I currently live in Clemson, South Carolina, while finishing my Masters in Computer Engineering. I enjoy playing basketball, flying, reading and working on various computer projects in my free time. I am also a Clemson football and Formula 1 fan. 
+      I am currently a graduate student at Clemson University in Clemson, South Carolina, while finishing my Masters in Computer Engineering (May 2024).  In my free time, I enjoy playing basketball, flying in pursuit of my private pilot's license, traveling, reading, and working on various computer projects.  I am also a big Clemson football and Formula 1 fan.
     </p>
     <p>Feel free to reach out to me via <a href="mailto:tmacshaughnessy@gmail.com">email</a>.</p>
     </>
