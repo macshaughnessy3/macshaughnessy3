@@ -15,7 +15,11 @@
     .column {
       margin: 0 2rem 0 2rem;
       flex-direction: column;
-    }  
+    }
+    
+    .column:nth-child(2) {
+      padding-bottom: 5rem;
+    }
   }
 }
 
@@ -72,7 +76,11 @@ a {
 
       .column {
         flex-basis: 100%;
-      }  
+      }
+
+      .column:nth-child(2) {
+        padding-bottom: 5rem;
+      }
     }
   }
 
