@@ -21,13 +21,18 @@
 
 .ibox {
   display: grid;
-  grid-template-columns: 10rem 10rem 10rem;
+  grid-template-columns: 10rem 10rem;
   grid-gap: 1rem;
 }
+
 .ibox2 {
   display: grid;
-  grid-template-columns: 12rem 12rem 12rem;
-  grid-gap: 1rem;
+  grid-template-columns: 12rem 12rem;
+  grid-gap: 0.1rem;
+
+  .center {
+    margin: auto;
+  }
 }
 
 .personal-info {
@@ -69,5 +74,17 @@ a {
         flex-basis: 100%;
       }  
     }
+  }
+
+  .ibox {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-gap: 1rem;
+  }
+  
+  .ibox2 {
+    display: grid;
+    grid-template-columns: 12rem 12rem 12rem;
+    grid-gap: 0.1rem;
   }
 }

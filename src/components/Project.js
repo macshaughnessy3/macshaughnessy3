@@ -13,7 +13,7 @@ const Project = (props) => {
 		<React.Fragment>
 			<div className="project">
 				<Link to={link}>
-					<div className={size}>
+					<div className={"contents "+size}>
 						<h3>{title}</h3>
 						<div className="project-logo">
 							<img src={logo} alt="logo" className="image"/>
@@ -35,7 +35,7 @@ const Project = (props) => {
 
 export default Project;
 
-Project.defaultProps = {name: 'macshaughnessy3'}
+Project.defaultProps = {name: 'macshaughnessy3', size: ""}
 Project.propTypes = { name: PropTypes.string.isRequired}
 
 // import React, { Component } from "react";

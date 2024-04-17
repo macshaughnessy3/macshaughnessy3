@@ -17,25 +17,25 @@
 
 .project {
 	mix-blend-mode: normal;
-	border-radius: 20px;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
 	opacity: 0.8;
-	height: 100%;
 }
 
 .project a {
 	text-decoration: none;
 }
 
-// .project:hover {
-// 	background: #fafafa;
-// 	opacity: 1;
-// 	transition: background-color 0.3s ease-in-out;
-// }
+.project:hover {
+	background: #fafafa;
+	opacity: 1;
+	transition: background-color 0.3s ease-in-out;
+}
 
-// .project:hover .project-link {
-// 	color: var(--link-color);
-// 	transition: color 0.3s ease-in-out;
-// }
+.project:hover .project-link {
+	color: var(--link-color);
+	transition: color 0.3s ease-in-out;
+}
 
 .project-container {
 	padding: 30px;
@@ -65,7 +65,14 @@
 	font-size: 16px;
 	padding-top: 15px;
 	margin-bottom: 1em;
+	margin-top: none;
 	font-weight: 700;
+}
+
+.contents {
+	h3 {
+		margin: none;
+	}
 }
 
 .project-description {
@@ -88,10 +95,4 @@
 .project-link-text {
 	padding-left: 20px;
 	font-weight: 700;
-}
-
-@media (max-width: 600px) {
-	.project {
-		height: 300px;
-	}
 }

@@ -1,4 +1,4 @@
-import {useEffect, useCallback} from "react";
+import {useEffect, useCallback} from 'react';
 import NavBar from "./components/NavBar";
 import Home from "./views/Home";
 import About from "./views/About";
@@ -9,7 +9,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
 import "./App.scss";
 
@@ -58,7 +58,7 @@ export default function App() {
       <div className="App">
         <Router>
             <Routes>
-              <Route exact path='/' element={<Home/>}/>
+              <Route exact path='/macshaughnessy3' element={<Home/>}/>
               <Route exact path='/about' element={<About/>}/>
               <Route exact path='/projects' element={<Projects/>}/>
               <Route path="projects/:number" element={<Project/>}/>

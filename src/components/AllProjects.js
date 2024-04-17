@@ -1,7 +1,7 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import React from "react";
-
 import Project from "./Project";
+import "./styles/allprojects.scss";
 
 const INFO={projects: [
     {
@@ -19,6 +19,7 @@ const INFO={projects: [
         description:
             "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
         logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.svg",
+        size:"",
         linkText: "View Project",
         link: "https://github.com/macshaughnessy3/hackintosh",
     },
@@ -28,6 +29,7 @@ const INFO={projects: [
         description:
             "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
         logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos@0.0.3/src/swift/swift.svg",
+        size:"",
         linkText: "View Project",
         link: "https://github.com/macshaughnessy3/PAWS",
     },
@@ -50,13 +52,11 @@ const INFO={projects: [
     // },
 ]};
 
-import "./styles/allprojects.scss";
-
 const AllProjects = () => {
 	return (
 		<div className="ibox2">
 			{INFO.projects.map((project, index) => (
-				<div className="" key={index}>
+				<div className="center" key={index}>
 					<Project
 						logo={project.logo}
                         size={project.size}
