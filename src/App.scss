@@ -1,0 +1,103 @@
+.App {
+  position: absolute;
+  display: flex;
+  top: 60px; // matches logo height of 36.5
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    .column {
+      margin: 0 2rem 0 2rem;
+      flex-direction: column;
+    }
+    
+    .column:nth-child(2) {
+      padding-bottom: 5rem;
+    }
+  }
+}
+
+.ibox {
+  display: grid;
+  grid-template-columns: 8rem 8rem;
+  grid-gap: 1rem;
+}
+
+ol {
+  padding-inline-start: 20px;
+  color: var(--normal);
+}
+
+.ibox2 {
+  display: grid;
+  grid-template-columns: 10rem 10rem;
+  grid-gap: 0.1rem;
+
+  .center {
+    margin: auto;
+  }
+}
+
+.personal-info {
+  .center {
+    margin: auto;
+    width: 100%;
+  }
+
+  .image {
+    border-radius: 50px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+h2 > a {
+  color: unset;
+  font-style: unset;
+  cursor: pointer;
+  text-decoration: unset;
+}
+
+a {
+  color: var(--text-secondary);
+}
+
+@media only screen and (min-width: 1023px) {
+  .App{
+    .home {
+      flex-direction: row;
+
+      .scrollable {
+        overflow: auto;
+        min-height: -webkit-min-content;
+      }
+
+      .column {
+        flex-basis: 100%;
+      }
+
+      .column:nth-child(2) {
+        padding-bottom: 5rem;
+      }
+    }
+  }
+
+  .ibox {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-gap: 1rem;
+  }
+  
+  .ibox2 {
+    display: grid;
+    grid-template-columns: 12rem 12rem 12rem;
+    grid-gap: 0.1rem;
+  }
+}
