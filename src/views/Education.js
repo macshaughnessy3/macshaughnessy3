@@ -8,21 +8,21 @@ const Education = (props) => {
     <EducationInfo 
       header={"Clemson University"}
       location={"Clemson, South Carolina"}
-      date={"2022-May 2024"}
+      date={"August 2022 - May 2024"}
       degree={"Master of Science in Computer Engineering"}
       detail={"Thesis: Analysis of CNN Performance utilizing JPEG Compressed Images Created on an FPGA"}
     />
     <EducationInfo 
       header={"Clemson University"}
       location={"Clemson, South Carolina"}
-      date={"2017 - 2022"}
+      date={"August 2017 - May 2022"}
       degree={"Bachelor of Science in Computer Engineering with Minor in Mathematical Sciences"}
       detail={""}
     />
     <EducationInfo 
       header={"Clemson University"}
       location={"Clemson, South Carolina"}
-      date={"2017 - 2022"}
+      date={"August 2017 - May 2022"}
       degree={"Bachelor of Science in Electrical Engineering"}
       detail={""}
     />
@@ -30,7 +30,6 @@ const Education = (props) => {
       header={"Study Abroad"}
       location={"Stuttgart and Munich, Germany"}
       date={"May - June 2018"}
-      longLocation={true}
       degree={"CECAS Global Sophomore Program"}
       detail={"Studied Automotive Engineering and Manufacturing"}
     />

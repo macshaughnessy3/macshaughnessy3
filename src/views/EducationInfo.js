@@ -11,7 +11,7 @@ export const EducationInfo = (props) => {
         </span>
       </span>
       <p className={"longLocation"}>{props.degree}</p>
-      <p>{props.detail}</p>
+      <p className={"longLocation"}>{props.detail}</p>
     </div>
   );
 };

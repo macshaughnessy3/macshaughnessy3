@@ -155,4 +155,10 @@ a {
       margin-bottom: 0rem;
     }
   }
+
+  .longLocation {
+    margin-block-start: unset;
+    text-wrap: wrap;
+    width: 75%;
+  }
 }

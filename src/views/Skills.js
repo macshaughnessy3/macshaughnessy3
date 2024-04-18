@@ -8,7 +8,7 @@ const Skills = (props) => {
       <SkillsInfo 
         header={"Languages"}
         skills={[
-          "VHDL","Verilog", "Vitis HLS", "Python", "MATLAB", "C and C++", "React","Ruby on Rails","CUDA", "Assembly", "Swift", "MATLAB"
+          "VHDL","Verilog", "Vitis HLS", "Python", "MATLAB", "C and C++", "React","Ruby on Rails","CUDA", "Assembly", "Swift", "SQL"
         ]} 
       />
       <SkillsInfo
