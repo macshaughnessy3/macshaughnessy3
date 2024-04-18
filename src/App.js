@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar";
 import Home from "./views/Home";
 import About from "./views/About";
 import Projects from "./views/Projects";
-import Project from "./components/Project";
+import AllProjects from "./components/AllProjects";
 import useLocalStorage from 'use-local-storage'
 import {
   BrowserRouter as Router,
@@ -61,7 +61,7 @@ export default function App() {
               <Route exact path='/macshaughnessy3' element={<Home/>}/>
               <Route exact path='/about' element={<About/>}/>
               <Route exact path='/projects' element={<Projects/>}/>
-              <Route path="projects/:number" element={<Project/>}/>
+              <Route path="projects/:number" element={<AllProjects/>}/>
             </Routes>
         </Router>
       </div>

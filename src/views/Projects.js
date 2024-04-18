@@ -7,7 +7,8 @@ const Projects = (props) => {
   return (
     <>
       <h2 className='header'>
-        <Link to="/projects/1" >Projects</Link>
+        Projects
+        {/* <Link to="/projects">Projects</Link> */}
       </h2>
       <AllProjects/>
     </>
